@@ -23,6 +23,13 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/*@font-face {
+    font-family: 'Open Sans', sans-serif;
+    src: url('../webfonts/') format('woff2'),
+        url('path/to/your/font.woff') format('woff');
+     Add additional src lines for other font file formats, if available 
+}*/
+
 .container {
     padding-left: 15px;
     padding-right: 15px;
