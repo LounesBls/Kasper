@@ -306,18 +306,19 @@ header>.container .links li a.active {
 
 
 /* start searchicon  */
-header nav .searchicon {
-    height: 1.8em;
-    border-left: 1px solid #a2a2a2;
-    margin-left: 1em;
+header nav .links:hover {
+    cursor: pointer;
 }
 
-header nav .searchicon i {
-    color: #fff;
-    position: relative;
-    padding-left: 1em;
-    top: 9px;
-    font-size: 20px;
+header nav .searchIcon {
+    height: 1.8em;
+    margin-left: .5rem;
+    padding-left: 1rem;
+    border-left: 2px solid #a2a2a2;
+
+    svg:hover {
+        cursor: pointer;
+    }
 }
 
 /* End nav  */
@@ -534,15 +535,10 @@ header nav .searchicon i {
 
 .design .text li {
     padding: 1em 0;
-}
-
-.design .text li::before {
-    font-family: 'Font Awesome 5 Free';
-    content: '\e163';
-    font-weight: 900;
-    padding-right: 1em;
-    position: relative;
-    top: 3px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
 }
 
 /* End Design  */
@@ -791,36 +787,15 @@ header nav .searchicon i {
     text-align: center;
 }
 
+.statics .box svg {
+    background-color: #000;
+    border-radius: 50%;
+    padding: .25rem;
+}
+
 .statics .box h3 {
     font-size: 3em;
     padding: 0.6em 0;
-}
-
-.statics .box:first-child:before {
-    content: "\f7b6";
-}
-
-.statics .box:nth-child(2):before {
-    content: "\f07b";
-}
-
-.statics .box:nth-child(3):before {
-    content: "\f0e0";
-}
-
-.statics .box:last-child:before {
-    content: "\f091";
-}
-
-.statics .box:first-child:before,
-.statics .box:nth-child(2):before,
-.statics .box:nth-child(3):before,
-.statics .box:last-child:before {
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 900;
-    border-radius: 50%;
-    padding: .5em;
-    background-color: #000;
 }
 
 /* End Statics */
@@ -1039,16 +1014,13 @@ header nav .searchicon i {
     gap: 1em;
 }
 
-.quote .container q {
+.quote .container p {
     font-size: 30px;
     max-width: 100%;
 }
 
-.quote .container q::before,
-.quote .container q::after {
-    content: "\f10d";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
+.quote .container p span svg {
+    padding-top: 0.25rem;
 }
 
 /* End quote  */
@@ -1198,6 +1170,7 @@ header nav .searchicon i {
     padding: 1em 0 1.6em;
     font-weight: 500;
     font-size: 17px;
+    cursor: pointer;
 }
 
 .pricing .container .pricing-footer p:last-child {
@@ -1258,14 +1231,10 @@ header nav .searchicon i {
     height: 3em;
 }
 
-.subscribe form i {
-    height: 2em;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 4%;
-    transform: translateY(-25%);
-    font-size: 1.3em;
+.subscribe form svg {
+    margin-top: .125rem;
+    padding-top: .5rem;
+
 }
 
 .subscribe form input:first-of-type {
@@ -1276,6 +1245,7 @@ header nav .searchicon i {
     left: 3em;
     height: 100%;
     background: transparent;
+    color: #fff;
 }
 
 .subscribe form input::placeholder {
@@ -1464,6 +1434,10 @@ footer .container .media-icons {
     margin: 2em 0 4em;
     justify-content: space-between;
     gap: 2em;
+}
+
+footer .media-icons svg {
+    cursor: pointer;
 }
 
 footer .container p {
